@@ -1,7 +1,19 @@
-import { animationClass, containerClass, containerInstance, dropPlaceholderFlexContainerClass, dropPlaceholderInnerClass, dropPlaceholderWrapperClass, stretcherElementClass, stretcherElementInstance, translationValue, wrapperClass, dropPlaceholderDefaultClass } from './constants';
+import {
+  animationClass,
+  containerClass,
+  containerInstance,
+  dropPlaceholderDefaultClass,
+  dropPlaceholderFlexContainerClass,
+  dropPlaceholderInnerClass,
+  dropPlaceholderWrapperClass,
+  stretcherElementClass,
+  stretcherElementInstance,
+  translationValue,
+  wrapperClass,
+} from './constants';
 import { defaultOptions } from './defaults';
 import { domDropHandler } from './dropHandlers';
-import { ContainerOptions, SmoothDnD, SmoothDnDCreator, DropPlaceholderOptions } from './exportTypes';
+import { ContainerOptions, DropPlaceholderOptions, SmoothDnD, SmoothDnDCreator } from './exportTypes';
 import { ContainerProps, DraggableInfo, DragInfo, DragResult, ElementX, IContainer, LayoutManager } from './interfaces';
 import layoutManager from './layoutManager';
 import Mediator from './mediator';
@@ -802,4 +814,4 @@ smoothDnD.isDragging = function () {
   return Mediator.isDragging();
 }
 
-export default smoothDnD;
+export { smoothDnD };
