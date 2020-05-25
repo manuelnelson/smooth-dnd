@@ -6,11 +6,7 @@ import { ElementX } from './src/interfaces';
 
 export * from './src/exportTypes';
 
-export {
-    constants,
-    smoothDnD,
-    dropHandlers,
-};
+
 
 function delegateProperty(from: any, to:any, propName: string) {
     Object.defineProperty(from, propName, {
@@ -39,5 +35,10 @@ delegateProperty(deprecetedDefaultExport, smoothDnD, 'maxScrollSpeed');
 delegateProperty(deprecetedDefaultExport, smoothDnD, 'wrapChild');
 delegateProperty(deprecetedDefaultExport, smoothDnD, 'dropHandler');
 
+export {
+    constants,
+    smoothDnD,
+    dropHandlers,
+    deprecetedDefaultExport
+};
 
-export default deprecetedDefaultExport;
