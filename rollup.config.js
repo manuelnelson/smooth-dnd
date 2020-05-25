@@ -1,6 +1,5 @@
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
-import { uglify } from 'rollup-plugin-uglify';
 
 const extensions = [
 	'.js', '.jsx', '.ts', '.tsx',
@@ -10,7 +9,7 @@ module.exports = {
   input: 'index.ts',
   output: {
     file: './dist/index.js',
-    format: 'es',
+    format: 'esm',
     sourcemap: false,
     name: 'SmoothDnD',
     exports: 'named',
@@ -24,6 +23,5 @@ module.exports = {
 		commonjs({
 			extensions
 		}),
-    uglify()
   ],
 };
