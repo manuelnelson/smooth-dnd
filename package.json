@@ -1,7 +1,7 @@
 {
-  "name": "smooth-dnd",
+  "name": "@manuelnelson/smooth-dnd",
   "version": "0.12.1",
-  "description": "Drag and Drop library",
+  "description": "Drag and Drop library - update to work with esbuild and vite",
   "main": "./dist/index.js",
   "scripts": {
     "bundle": "rollup -c --environment INCLUDE_DEPS,BUILD:production",
@@ -28,7 +28,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kutlugsahin/smooth-dnd.git"
+    "url": "https://github.com/manuelnelson/smooth-dnd.git"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",

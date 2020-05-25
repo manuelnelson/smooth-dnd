@@ -1,13 +1,13 @@
 import * as constants from './src/constants';
-import container from './src/container';
+import smoothDnD from './src/container';
 import * as dropHandlers from './src/dropHandlers';
-import { SmoothDnDCreator, ContainerOptions } from './src/exportTypes';
+import { ContainerOptions, SmoothDnDCreator } from './src/exportTypes';
 import { ElementX } from './src/interfaces';
 
 export * from './src/exportTypes';
 
 export {
-    container as smoothDnD,
+    smoothDnD,
     constants,
     dropHandlers,
 };
