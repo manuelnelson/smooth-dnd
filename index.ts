@@ -23,21 +23,21 @@ function delegateProperty(from: any, to:any, propName: string) {
     
 const deprecetedDefaultExport: SmoothDnDCreator = function(element: ElementX, options?: ContainerOptions) {
     console.warn('default export is deprecated. please use named export "smoothDnD"');
-    return container(element, options);
+    return smoothDnD(element, options);
 };
 
 deprecetedDefaultExport.cancelDrag = function () {
-    container.cancelDrag();
+    smoothDnD.cancelDrag();
 }
 
 deprecetedDefaultExport.isDragging = function () {
-    return container.isDragging();
+    return smoothDnD.isDragging();
 }
 
-delegateProperty(deprecetedDefaultExport, container, 'useTransformForGhost');
-delegateProperty(deprecetedDefaultExport, container, 'maxScrollSpeed');
-delegateProperty(deprecetedDefaultExport, container, 'wrapChild');
-delegateProperty(deprecetedDefaultExport, container, 'dropHandler');
+delegateProperty(deprecetedDefaultExport, smoothDnD, 'useTransformForGhost');
+delegateProperty(deprecetedDefaultExport, smoothDnD, 'maxScrollSpeed');
+delegateProperty(deprecetedDefaultExport, smoothDnD, 'wrapChild');
+delegateProperty(deprecetedDefaultExport, smoothDnD, 'dropHandler');
 
 
 export default deprecetedDefaultExport;
