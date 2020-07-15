@@ -1,6 +1,6 @@
 {
   "name": "esbuild-smooth-dnd",
-  "version": "0.12.7",
+  "version": "0.12.8",
   "description": "Drag and Drop library - update to work with esbuild and vite",
   "main": "./dist/index.js",
   "scripts": {

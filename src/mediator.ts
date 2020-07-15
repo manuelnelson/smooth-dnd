@@ -357,10 +357,10 @@ function onMouseDown(event: MouseEvent & TouchEvent) {
         const onMouseUp = () => {
           Utils.removeClass(window.document.body, constants.disbaleTouchActions);
           Utils.removeClass(window.document.body, constants.noUserSelectClass);
-          window.document.removeEventListener('mouseup', onMouseUp);
+          window.document.removeEventListener('mouseup mouseleave', onMouseUp);
         }
 
-        window.document.addEventListener('mouseup', onMouseUp);
+        window.document.addEventListener('mouseup mouseleave', onMouseUp);
       }
 
       if (startDrag) {
