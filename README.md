@@ -1,3 +1,8 @@
+## Note
+This repository was forked from kutlugsahins original smooth-dnd implementation to enable it be used in Vitejs and other rollup frameworks that require ES modules.  A few smaller bug fixes have also been put in place, so use at your own descretion.  I do not plan to maintain this framework other than as how it pertains to my own use cases - although I may accept pull requests.
+
+------------
+
 # smooth-dnd
 
 A fast and lightweight drag&drop, sortable library for with many configuration options covering many d&d scenarios. There is no external dependencies. It uses css transitions for animations so it's hardware accelerated whenever possible.
@@ -14,7 +19,7 @@ For **Vue.js** components and usage follow <a href="https://github.com/kutlugsah
 ### Installation
 
 ```shell
-npm i smooth-dnd
+npm i esbuild-smooth-dnd
 ```
 
 ## Usage
