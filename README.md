@@ -1,5 +1,5 @@
 ## Note
-This repository was forked from kutlugsahins original smooth-dnd implementation to enable it be used in Vitejs and other rollup frameworks that require ES modules.  A few smaller bug fixes have also been put in place, so use at your own descretion.  I do not plan to maintain this framework other than as how it pertains to my own use cases - although I may accept pull requests.
+This repository was forked from kutlugsahins original smooth-dnd implementation to enable it be used in Vitejs and other rollup frameworks that require ES modules.  A few smaller bug fixes have also been put in place, so use at your own discretion.  I do not plan to maintain this framework other than as how it pertains to my own use cases - although I will accept pull requests.
 
 ------------
 
